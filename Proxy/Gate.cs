@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proxy
 {
-    public class Gate : IGateway
+    public class Gate : IServer
     {
 
         private bool _isAuthenticated;
@@ -26,7 +26,7 @@ namespace Proxy
             if (!_isAuthenticated && Authenticate(APIKey))
             {
                 _isAuthenticated = true;
-                return new Status(200);
+                return _server.Connect(APIKey);
             }
 
             return new Status(404);
@@ -38,8 +38,7 @@ namespace Proxy
             {
                 try
                 {
-                    _server.Send(data);
-                    return new Status(200);
+                    return _server.Send(data);
                 }
                 catch
                 {
@@ -72,7 +71,7 @@ namespace Proxy
             if (_isAuthenticated)
             {
                 _isAuthenticated = false;
-                return new Status(200);
+                return _server.Disconnect();
             }
 
             return new Status(404);

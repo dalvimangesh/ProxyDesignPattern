@@ -9,7 +9,11 @@ namespace Proxy
     public interface IServer
     {
         Status Send(string data);
+
+        Status Connect(string APIKey);
+
         Status Get();
 
+        Status Disconnect();
     }
 }

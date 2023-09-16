@@ -10,9 +10,15 @@ namespace Proxy
     {
 
         private string _data;
+
         public Server() 
         {
             _data = "";
+        }
+
+        public Status Connect(string APIKey)
+        {
+            return new Status(200);
         }
 
         public Status Send(string data)
@@ -24,6 +30,11 @@ namespace Proxy
         public Status Get()
         {
             return new Status(200,_data);
+        }
+
+        public Status Disconnect()
+        {
+            return new Status(200);
         }
 
     }
