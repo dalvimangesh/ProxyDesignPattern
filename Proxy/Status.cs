@@ -1,13 +1,13 @@
 ﻿/******************************************************************************
-* Filename    = Gate.cs
+* Filename    = Status.cs
 *
 * Author      = Mangesh Dalvi
 *
-* Product     = ProxyDesignPatterns
+* Product     = ProxyDesignPattern
 * 
 * Project     = Proxy
 *
-* Description =  Represents the status of an operation, including an HTTP status code and optional data.
+* Description = Represents the status of an operation, including an HTTP status code and optional data.
 *****************************************************************************/
 
 using System;

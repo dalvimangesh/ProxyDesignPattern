@@ -3,11 +3,11 @@
 *
 * Author      = Mangesh Dalvi
 *
-* Product     = SoftwareDesignPatterns
+* Product     = ProxyDesignPattern
 * 
 * Project     = Proxy
 *
-* Description =  Represents a gate that acts as a proxy for a server with authentication.
+* Description = Represents a gate that acts as a proxy for a server with authentication.
 *****************************************************************************/
 
 using System;
@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 namespace Proxy
 {
     /// <summary>
-    /// Represents a gate that acts as a proxy for a server with authentication.
+    /// Represents a gate that acts as a proxy server for a original server with authentication.
     /// </summary>
     public class Gate : IServer
     {
@@ -34,7 +34,7 @@ namespace Proxy
         public Gate() 
         {
             _isAuthenticated = false;
-            _secret = "mMPDpLPpP";
+            _secret = "mMPDpLPpP"; // secrete key
             _server = new Server();
         }
 
@@ -42,7 +42,7 @@ namespace Proxy
         /// Establishes a connection to the server with the provided API key.
         /// </summary>
         /// <param name="APIKey">The API key for authentication.</param>
-        /// <returns>A Status object indicating the result of the connection attempt.</returns>
+        /// <returns>A Status object indicating the result of the connection attempt</returns>
         public Status Connect(string APIKey)
         {
 
@@ -59,7 +59,7 @@ namespace Proxy
         /// Sends data to the server if authenticated.
         /// </summary>
         /// <param name="data">The data to send to the server.</param>
-        /// <returns>A Status object indicating the result of the data transmission.</returns>
+        /// <returns>A Status object indicating the result of the data transmission</returns>
         public Status Send(string data)
         {
             if(_isAuthenticated)
@@ -80,7 +80,7 @@ namespace Proxy
         /// <summary>
         /// Retrieves data from the server if authenticated.
         /// </summary>
-        /// <returns>A Status object containing the retrieved data or an error status.</returns>
+        /// <returns>A Status object containing the retrieved data or an error status</returns>
         public Status Get()
         {
             if (_isAuthenticated)
@@ -101,7 +101,7 @@ namespace Proxy
         /// <summary>
         /// Disconnects from the server if authenticated.
         /// </summary>
-        /// <returns>A Status object indicating the result of the disconnection.</returns>
+        /// <returns>A Status object indicating the result of the disconnection</returns>
         public Status Disconnect()
         {
             if (_isAuthenticated)

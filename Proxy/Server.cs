@@ -1,13 +1,13 @@
 ﻿/******************************************************************************
-* Filename    = Gate.cs
+* Filename    = Server.cs
 *
 * Author      = Mangesh Dalvi
 *
-* Product     = ProxyDesignPatterns
+* Product     = ProxyDesignPattern
 * 
 * Project     = Proxy
 *
-* Description =  Represents a Real server 
+* Description = Represents a Real server 
 *****************************************************************************/
 
 using System;
@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 namespace Proxy
 {
     /// <summary>
-    /// Represents a Real server 
+    /// Represents a Original server 
     /// </summary>
     public class Server : IServer
     {
@@ -27,7 +27,7 @@ namespace Proxy
         private string _data;
 
         /// <summary>
-        /// Initializes a new instance of the Server 
+        /// Initializes a new instance of the Server
         /// </summary>
         public Server() 
         {

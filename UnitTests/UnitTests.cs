@@ -1,5 +1,5 @@
 /******************************************************************************
-* Filename    = Gate.cs
+* Filename    = UnitTests.cs
 *
 * Author      = Mangesh Dalvi
 *
@@ -20,6 +20,10 @@ using System.Threading.Tasks;
 
 namespace Proxy.Tests
 {
+    /// <summary>
+    /// Total 6 tests cases added.
+    /// </summary>
+
     [TestClass]
     public class UnitTests
     {
