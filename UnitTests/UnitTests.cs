@@ -11,6 +11,10 @@ namespace Proxy.Tests
     [TestClass]
     public class UnitTests
     {
+
+        /// <summary>
+        /// Test for a successful connection through the gate.
+        /// </summary
         [TestMethod]
         public void PassedThroughGate()
         {
@@ -23,6 +27,9 @@ namespace Proxy.Tests
             Assert.AreEqual(200, response._code);
         }
 
+        /// <summary>
+        /// Test for a failed connection attempt through the gate.
+        /// </summary>
         [TestMethod]
         public void FailedThroughGate()
         {
@@ -35,6 +42,9 @@ namespace Proxy.Tests
             Assert.AreEqual(404, response._code);
         }
 
+        /// <summary>
+        /// Test for sending data through a successful connection.
+        /// </summary>
         [TestMethod]
         public void SendingData()
         {
@@ -52,6 +62,9 @@ namespace Proxy.Tests
             Assert.AreEqual(data, "AAA ");
         }
 
+        /// <summary>
+        /// Test for sending multiple sets of data through a successful connection.
+        /// </summary>
         [TestMethod]
         public void SendingMultipleData()
         {
@@ -71,6 +84,9 @@ namespace Proxy.Tests
             Assert.AreEqual(data, "AAA BBB CCC ");
         }
 
+        /// <summary>
+        /// Test for keeping data alive after disconnecting and reconnecting.
+        /// </summary>
         [TestMethod]
         public void KeepingDataAlive()
         {
@@ -96,6 +112,9 @@ namespace Proxy.Tests
 
         }
 
+        /// <summary>
+        /// Test for authentication requirements.
+        /// </summary>
         [TestMethod]
         public void AuthenticationIsNeeded()
         {
