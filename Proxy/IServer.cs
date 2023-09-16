@@ -1,4 +1,16 @@
-﻿using System;
+﻿/******************************************************************************
+* Filename    = Gate.cs
+*
+* Author      = Mangesh Dalvi
+*
+* Product     = ProxyDesignPatterns
+* 
+* Project     = Proxy
+*
+* Description =  Defines the contract for a server interface that can be implemented by server classes.
+*****************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

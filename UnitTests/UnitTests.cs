@@ -1,3 +1,15 @@
+/******************************************************************************
+* Filename    = Gate.cs
+*
+* Author      = Mangesh Dalvi
+*
+* Product     = ProxyDesignPatterns
+* 
+* Project     = UnitTests
+*
+* Description = Unit tests for the proxy pattern demo.
+*****************************************************************************/
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Proxy;
 using System;

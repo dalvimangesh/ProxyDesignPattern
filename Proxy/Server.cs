@@ -1,4 +1,16 @@
-﻿using System;
+﻿/******************************************************************************
+* Filename    = Gate.cs
+*
+* Author      = Mangesh Dalvi
+*
+* Product     = ProxyDesignPatterns
+* 
+* Project     = Proxy
+*
+* Description =  Represents a Real server 
+*****************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

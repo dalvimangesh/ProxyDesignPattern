@@ -1,4 +1,16 @@
-﻿using System;
+﻿/******************************************************************************
+* Filename    = Gate.cs
+*
+* Author      = Mangesh Dalvi
+*
+* Product     = SoftwareDesignPatterns
+* 
+* Project     = Proxy
+*
+* Description =  Represents a gate that acts as a proxy for a server with authentication.
+*****************************************************************************/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
