@@ -1,4 +1,4 @@
-/******************************************************************************
+﻿/******************************************************************************
 * Filename    = UnitTests.cs
 *
 * Author      = Mangesh Dalvi
@@ -157,7 +157,7 @@ namespace Proxy.Tests
                 Assert.Fail();
             }
 
-            status = connection.Connect("mMPDpLPpP");
+            connection.Connect("mMPDpLPpP");
 
             status = connection.Disconnect();
 
